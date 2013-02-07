@@ -94,11 +94,6 @@ const uint16_t PROGMEM port_to_mode_PGM[] = {
 	(uint16_t) &DDRE,
 	(uint16_t) &DDRF,
 	(uint16_t) &DDRG,
-	(uint16_t) &DDRH,
-	NOT_A_PORT,
-	(uint16_t) &DDRJ,
-	(uint16_t) &DDRK,
-	(uint16_t) &DDRL,
 };
 
 const uint16_t PROGMEM port_to_output_PGM[] = {
@@ -110,11 +105,6 @@ const uint16_t PROGMEM port_to_output_PGM[] = {
 	(uint16_t) &PORTE,
 	(uint16_t) &PORTF,
 	(uint16_t) &PORTG,
-	(uint16_t) &PORTH,
-	NOT_A_PORT,
-	(uint16_t) &PORTJ,
-	(uint16_t) &PORTK,
-	(uint16_t) &PORTL,
 };
 
 const uint16_t PROGMEM port_to_input_PGM[] = {
@@ -126,11 +116,6 @@ const uint16_t PROGMEM port_to_input_PGM[] = {
 	(uint16_t) &PINE,
 	(uint16_t) &PINF,
 	(uint16_t) &PING,
-	(uint16_t) &PINH,
-	NOT_A_PIN,
-	(uint16_t) &PINJ,
-	(uint16_t) &PINK,
-	(uint16_t) &PINL,
 };
 
 const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
@@ -150,8 +135,8 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PB	, // PB 5 ** 11 ** PWM11	
 	PB	, // PB 6 ** 12 ** PWM12	
 	PB	, // PB 7 ** 13 ** PWM13	
-	PJ	, // PJ 1 ** 14 ** USART3_TX	
-	PJ	, // PJ 0 ** 15 ** USART3_RX	
+	NOT_A_PIN	, // NOT_A_PIN 1 ** 14 ** USART3_TX	
+	NOT_A_PIN	, // NOT_A_PIN 0 ** 15 ** USART3_RX	
 	PH	, // PH 1 ** 16 ** USART2_TX	
 	PH	, // PH 0 ** 17 ** USART2_RX	
 	PD	, // PD 3 ** 18 ** USART1_TX	
@@ -178,18 +163,18 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PG	, // PG 2 ** 39 ** D39	
 	PG	, // PG 1 ** 40 ** D40	
 	PG	, // PG 0 ** 41 ** D41	
-	PL	, // PL 7 ** 42 ** D42	
-	PL	, // PL 6 ** 43 ** D43	
-	PL	, // PL 5 ** 44 ** D44	
-	PL	, // PL 4 ** 45 ** D45	
-	PL	, // PL 3 ** 46 ** D46	
-	PL	, // PL 2 ** 47 ** D47	
-	PL	, // PL 1 ** 48 ** D48	
-	PL	, // PL 0 ** 49 ** D49	
-	PB	, // PB 3 ** 50 ** SPI_MISO	
-	PB	, // PB 2 ** 51 ** SPI_MOSI	
-	PB	, // PB 1 ** 52 ** SPI_SCK	
-	PB	, // PB 0 ** 53 ** SPI_SS	
+	NOT_A_PIN	, // NOT_A_PIN 7 ** 42 ** D42	
+	NOT_A_PIN	, // NOT_A_PIN 6 ** 43 ** D43	
+	NOT_A_PIN	, // NOT_A_PIN 5 ** 44 ** D44	
+	NOT_A_PIN	, // NOT_A_PIN 4 ** 45 ** D45	
+	NOT_A_PIN	, // NOT_A_PIN 3 ** 46 ** D46	
+	NOT_A_PIN	, // NOT_A_PIN 2 ** 47 ** D47	
+	NOT_A_PIN	, // NOT_A_PIN 1 ** 48 ** D48	
+	NOT_A_PIN	, // NOT_A_PIN 0 ** 49 ** D49	
+	PB	, // PB 3 ** 50 ** SNOT_A_PIN_MISO	
+	PB	, // PB 2 ** 51 ** SNOT_A_PIN_MOSI	
+	PB	, // PB 1 ** 52 ** SNOT_A_PIN_SCK	
+	PB	, // PB 0 ** 53 ** SNOT_A_PIN_SS	
 	PF	, // PF 0 ** 54 ** A0	
 	PF	, // PF 1 ** 55 ** A1	
 	PF	, // PF 2 ** 56 ** A2	
@@ -198,14 +183,14 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PF	, // PF 5 ** 59 ** A5	
 	PF	, // PF 6 ** 60 ** A6	
 	PF	, // PF 7 ** 61 ** A7	
-	PK	, // PK 0 ** 62 ** A8	
-	PK	, // PK 1 ** 63 ** A9	
-	PK	, // PK 2 ** 64 ** A10	
-	PK	, // PK 3 ** 65 ** A11	
-	PK	, // PK 4 ** 66 ** A12	
-	PK	, // PK 5 ** 67 ** A13	
-	PK	, // PK 6 ** 68 ** A14	
-	PK	, // PK 7 ** 69 ** A15	
+	NOT_A_PIN	, // NOT_A_PIN 0 ** 62 ** A8	
+	NOT_A_PIN	, // NOT_A_PIN 1 ** 63 ** A9	
+	NOT_A_PIN	, // NOT_A_PIN 2 ** 64 ** A10	
+	NOT_A_PIN	, // NOT_A_PIN 3 ** 65 ** A11	
+	NOT_A_PIN	, // NOT_A_PIN 4 ** 66 ** A12	
+	NOT_A_PIN	, // NOT_A_PIN 5 ** 67 ** A13	
+	NOT_A_PIN	, // NOT_A_PIN 6 ** 68 ** A14	
+	NOT_A_PIN	, // NOT_A_PIN 7 ** 69 ** A15	
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
