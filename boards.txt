@@ -8,7 +8,7 @@ ardusat.bootloader.low_fuses=0xFF
 ardusat.bootloader.high_fuses=0xD8
 ardusat.bootloader.extended_fuses=0xFD
 ardusat.bootloader.path=stk500v2
-ardusat.bootloader.file=stk500boot_v2_mega2560.hex
+ardusat.bootloader.file=stk500boot_v2_mega2561_uart1.hex
 ardusat.bootloader.unlock_bits=0x3F
 ardusat.bootloader.lock_bits=0x0F
 
